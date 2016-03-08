@@ -839,7 +839,7 @@ select.form-control.haveErrors:focus {
 .warning-container .warning-messages .warning-message,
 .warning-container .warning-messages .warning-message:hover,
 .warning-container .warning-messages .warning-message:focus {
-  color: darkorange;
+  color: #FF5D00;
 }
 .warning-container .warning-messages .warning-message::before {
   content: '\e101';
@@ -894,7 +894,7 @@ select.form-control.haveErrors:focus {
   color: #D22630;
 }
 .error-message::before {
-  content: '\e014';
+  content: '\e088';
   display: inline-block;
   font-family: "Glyphicons Halflings";
   margin-right: 5px;
@@ -959,9 +959,9 @@ select.form-control.haveErrors:focus {
   margin: 20px 0 25px 0;
 }
 .alert-warning {
-  color: darkorange;
+  color: #FF5D00;
   background-color: #fff;
-  border: 2px solid darkorange;
+  border: 2px solid #FF5D00;
   margin: 20px 0 25px 0;
 }
 .alert-info-red {
