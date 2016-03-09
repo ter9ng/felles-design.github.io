@@ -964,18 +964,18 @@ select.form-control.haveErrors:focus {
   border: 2px solid #FF5D00;
   margin: 20px 0 25px 0;
 }
-.alert-info-red {
+.alert-warning-text {
   display: table;
 }
-.alert-info-red span.glyphicon {
+.alert-warning-text span.glyphicon {
   width: 1%;
   top: 0.25em;
-  color: #D22630;
+  color: #FF5D00;
   display: table-cell;
   padding-right: 10px;
   font-size: 1.5em;
 }
-.alert-info-red.no-border {
+.alert-warning-text.no-border {
   padding-left: 0;
   border: none;
   background-color: inherit;
