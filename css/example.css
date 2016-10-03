@@ -325,6 +325,82 @@
     clear: both;
 } 
 
+/******************************************************************************
+=== #example-tool ===
+******************************************************************************/
+#example-tool {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #eee;
+    max-height: 500px;
+    z-index: 10;
+    background: rgba(0,0,0,0.7) none repeat 0 0 !important;
+    white-space: nowrap;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#example-tool, #example-tool * {
+    color: #fff !important;
+}
+
+#example-tool legend,
+#example-tool label,
+#example-tool input {
+    display: inline-block !important;
+    width: auto !important;
+}
+
+#example-tool legend {
+    border: 0 none;
+    padding: 0;
+    font-size: 11px !important;
+    display: inline-block;
+    margin: 0;
+}
+
+#example-tool label {
+    margin-top: 5px;
+}
+
+/******************************************************************************
+=== #saksbehanlder or soeker ===
+******************************************************************************/
+
+body.soeker #lower {
+    min-height: 0;
+}
+
+body.saksbehandler .public,
+body.soeker .internal,
+body.soeker #system-name,
+body.soeker #lower .container #menu-navbar,
+body.soeker #menu-toggle-btn {
+    display: none !important;
+}
+
+/******************************************************************************
+=== language ===
+******************************************************************************/
+
+.display-nn .language-nn,
+.language-nb {
+    display: inline-block;
+}
+
+.display-nn .language-nb,
+.language-nn {
+    display: none;
+}
+
+
 /*
 .tab-wrapper {
     position: relative;   

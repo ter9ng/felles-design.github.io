@@ -12,8 +12,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/font/roboto/Roboto-Bold.woff2"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/font/roboto/Roboto-Bold.woff2"/>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="css/felles-design.css" type="text/css"/>
     <link rel="stylesheet" href="css/example.css" type="text/css"/>
@@ -24,14 +24,69 @@
     <script type="application/javascript" src="js/ieshiv.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="">
+
+<div id="example-tool">
+    <fieldset>
+        <legend>Vis som:</legend>    
+        <input type="radio" name="user" value="soeker" class="input-radio" id="soeker-radio" onChange="javascript:changeUser('soeker')">
+        <label for="soeker-radio">Søker</label>
+        <input type="radio" name="user" value="saksbehandler" class="input-radio" id="saksbehandler-radio" onChange="javascript:changeUser('saksbehandler')">
+        <label for="saksbehandler-radio">Saksbehandler</label>
+    </fieldset>
+</div>
 
 <header>
     <nav id="top" class="nav navbar-default">
-        <div class="container">
-            <a class="landbruksdirektoratet" aria-label="Landbruksdirektoratet" href="https://www.slf.dep.no/no/#"></a>
-
+        <div class="container user-container">
+            <a class="landbruksdirektoratet public" href="https://www.landbruksdirektoratet.no">
+                <h1>Landbruksdirektoratet</h1>
+            </a>
+            <a class="intern-landbruksdirektoratet internal" href="https://www.landbruksdirektoratet.no">
+                <h1>Landbruksdirektoratet</h1>
+            </a>            
+            <h1 id="system-name">&lt;Systemnavn&gt;</h1>
             <div class="nav-info pull-right">
+                <div class="head-top">
+                    <ul class="pull-right">
+                        <li class="text-size-accessibility" role="presentation">
+                            <a href="" onClick="return false;">Skriftstørrelse</a>
+                            <div class="widget" role="alert">
+                                Hold nede Ctrl-tasten (Win) eller Cmd-tasten (Mac). 
+                                Trykk på + for å forstørre eller - for å forminske
+                            </div>
+                        </li>
+                        <li class="high-contrast" role="presentation">
+                            <a href="" onClick="$('body').toggleClass('hoykontrast'); return false;">Høykontrast</a>
+                        </li>
+                        <li class="language-option" role="presentation">
+                            <a href="" onClick="$('body').toggleClass('display-nn');return false;">
+                                <span class="language-nb">Bokmål</span>
+                                <span class="language-nn">Nynorsk</span>
+                            </a>
+                        </li>
+                        <li class="internal" role="presentation"><a href="" onClick="return false;">Elektroniske tjenester</a></li>
+                        <li class="internal" role="presentation"><a href="" onClick="return false;">Hjelp</a></li>
+                    </ul>
+                </div>
+                <div class="head-middle">
+                    <div class="pull-right user-information">
+                        <div class="public">
+                            <span title="personnummer">Du</span>
+                            <span class="text">representerer</span>
+                            <span class="text organization-number">&lt;orgnummer&gt;</span>
+                        </div>
+                        <div class="internal user-admin">
+                            <span class="user-data">Pålogget som: xxxxx</span>
+                            <a href="">Logg ut</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-bottom">
+                    <button id="log-out-btn" class="btn btn-default pull-right public">Logg ut</button>
+                    <div class="internal pull-right">Versjon ukjent</div>
+                </div>
+                <!--
                 <ol class="breadcrumb navbar-text pull-right navbar-inverse">
                     <li>
                         <a href="#">
@@ -48,6 +103,7 @@
                     </li>
                 </ol>
                 <a class="fagsystem-title" href="#">Produksjonstilskudd</a>
+                -->
             </div>
         </div>
     </nav>
@@ -55,15 +111,14 @@
     <nav id="middle" class="nav navbar-default collapse navbar-collapse navbar-collapse">
         <div class="container">
             <p class="navbar-text">Fagsystemet</p>
-
             <p class="navbar-text pull-right">Pålogget: <b>testbruker</b></p>
         </div>
     </nav>
 
     <nav id="lower" class="navbar navbar-default navbar-static-top">
-        <div class="container">
+        <div class="container user-container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                <button id="menu-toggle-btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar"
                         aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -71,36 +126,67 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <div class="hidden-lg hidden-md hidden-sm">
-                    <div class="container">
-                        <p class="navbar-text"><strong>Landbruksdirektoratet</strong></p>
+                <button id="setting-toggle-btn" type="button" class="navbar-toggle collapsed -setting" data-toggle="collapse" data-target="#user-navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle setting</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-                        <p class="navbar-text">Fagsystemet - Pålogget: <b>testbruker</b></p>
+                <div class="hidden-lg hidden-md hidden-sm" id="user-info-wrapper">
+                    <div class="container">
+                        <div>
+                            <a href="https://www.landbruksdirektoratet.no"><strong>Landbruksdirektoratet</strong></a>
+                        </div>
+                        <div class="user-information">
+                            <div class="public">
+                                <span title="personnummer">Du</span>
+                                <span class="text">representerer</span>
+                                <span class="text organization-number">&lt;orgnummer&gt;</span>
+                            </div>
+                            <div class="internal">
+                                <span class="">Pålogget som: xxxxx</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div id="navbar" class="collapse navbar-collapse navbar-collapse">
+            <div id="user-navbar" class="collapse navbar-collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li role="presentation"><a href="#" tabindex="-1">Hovedsiden</a>
+                    <li class="high-contrast" role="presentation">
+                        <a href="" onClick="$('body').toggleClass('hoykontrast'); return false;">Høykontranst</a>
                     </li>
-                    <li role="presentation">
-                        <a href="#" tabindex="-1">Menypunkt 1</a>
-                    </li>
-                    <li class="active" role="presentation">
-                        <a href="#" tabindex="-1">Menypunkt 2</a>
-                    </li>
+                    <li class="language-option" role="presentation"><a href="" onClick="return false;">Bokmål</a></li>
+                    <li class="internal" role="presentation"><a href="" onClick="return false;">Elektroniske tjenester</a></li>
+                    <li class="internal" role="presentation"><a href="" onClick="return false;">Hjelp</a></li>
+                    <li class="logout" role="presentation"><a href="" onClick="return false;">Logg ut</a></li>
+                </ul>
+            </div>
 
+            <!--
+            <div id="user-navbar" class="collapse navbar-collapse navbar-collapse">
+                <ul>
+                    <li class="high-contrast" role="presentation">
+                        <a href="" onClick="$('body').toggleClass('hoykontrast'); return false;">Høykontranst</a>
+                    </li>
+                    <li class="language-option" role="presentation"><a href="" onClick="return false;">Bokmål</a></li>
+                </ul>
+            </div>
+            -->
+            <div id="menu-navbar" class="collapse navbar-collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li role="presentation"><a href="#">Hovedsiden</a></li>
+                    <li role="presentation"><a href="#">Menypunkt 1</a></li>
+                    <li class="active" role="presentation"><a href="#">Menypunkt 2</a></li>
                     <li role="presentation" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nedtrekksmeny</a>
-
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
                             <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
                             <li><a href="#">One more separated link</a></li>
                         </ul>
                     </li>
@@ -113,13 +199,14 @@
     </nav>
 </header>
 
-<div class="container">
+<div class="container user-container">
     <section class="form-container">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h1>Søknad</h1>
             </div>
 
+            <!--
             <ul class="nav nav-tabs">
                 <li class="active" role="presentation">
                     <a href="index.html">Administrasjon</a>
@@ -131,6 +218,7 @@
                     <a href="index.html">Foretak</a>
                 </li>
             </ul>
+            -->
         </div>
 
         <div class="panel panel-default">
@@ -228,19 +316,22 @@
                         <p>1.000.000</p>
                     </div>
                 </div>
+                <!--
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="btn-toolbar" role="group">
                             <button type="button" class="btn btn-success">Lagre</button>
                             <button type="button" disabled="disabled" class="btn btn-success">Disabled</button>
-                            <button type="button" class="btn btn-default">Avbryt</button>
                         </div>
                     </div>
-                </div><div class="row">
+                </div>
+                -->
+                <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="btn-toolbar" role="group">
                             <button type="button" class="btn btn-primary">Lagre</button>
-                            <button type="button" class="btn disabled btn-primary">Disabled</button>
+                            <button type="button" class="btn -disabled btn-primary">Disabled</button>
+                            <button type="button" class="btn btn-default">Avbryt</button>
                         </div>
                     </div>
                 </div>
@@ -906,10 +997,11 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <div class="btn-toolbar" role="group">
-                            <button type="button" class="btn btn-success">Lagre</button>
+                            <button type="button" class="btn btn-primary">Godkjenn</button>
                             <button type="button" class="btn btn-default">Avbryt</button>
                         </div>
                     </div>
+                    <!--
                     <div class="col-xs-offset-0 col-sm-offset-3 col-xs-12 col-sm-5">
                         <div class="btn-toolbar pull-right" role="group">
                             <button type="button" class="btn btn-danger">Avslå</button>
@@ -917,6 +1009,7 @@
                             <button type="button" class="btn btn-primary">Godkjenn</button>
                         </div>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
@@ -1050,7 +1143,73 @@
             </div>
         </div>
 
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2>Spinner</h2>
+            </div>
 
+            <div class="panel-body">
+                <div>
+                    <h3>Generell</h3>
+                    <div class="pre-bush-code">
+                        <div class="-display-spinner"></div>                    
+                    </div>
+                </div>
+                <div>
+                    <h3>Button</h3>
+                    <div class="pre-bush-code">
+                        <button class="btn btn-primary -display-spinner">Lagre</button>
+                        <button class="btn btn-default -display-spinner">Avbryt</button>
+                    </div>
+                </div>
+
+                <!--
+                <div>
+                -->
+
+
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2>Hjelpetekst</h2>
+            </div>
+
+            <div class="panel-body">
+                <div class="pre-bush-code">
+                    <h3>Inline</h3>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor nibh enim. Curabitur quis nunc lobortis, lobortis felis ac, porttitor metus. Quisque ut nulla vehicula sem placerat luctus. Ut ac iaculis turpis. Quisque gravida ullamcorper magna id ullamcorper. Integer vulputate nibh at sapien suscipit, eu fringilla ligula sollicitudin.
+                        <a href="" role="button" onClick="javascript:toggleHelpText(event)" class="helptext-btn" aria-controls="helptext-ctrl-a">
+                            <span class="glyphicon glyphicon-question-sign icon-blue" aria-hidden="true"></span>
+                            <span class="aria-visible">Informasjon om XXX</span>
+                        </a>
+                        <div class="helptext-hld" aria-hidden="true" aria-live="polite" role="region" id="helptext-ctrl-a" aria-expanded="false"> 
+                            <div class="helptext-cnt">
+                                Vivamus blandit nunc dui, sed bibendum erat posuere non. Etiam posuere diam et consequat lacinia. Sed elit mauris, ullamcorper eget tellus a, bibendum mollis sapien.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pre-bush-code">
+                    <h3>Popup</h3>
+                    <div class="position-relative" style="width: 600px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor nibh enim. Curabitur quis nunc lobortis, lobortis felis ac, porttitor metus. Quisque ut nulla vehicula sem placerat luctus. Ut ac iaculis turpis. Quisque gravida ullamcorper magna id ullamcorper. Integer vulputate nibh at sapien suscipit, eu fringilla ligula sollicitudin.
+                        <a href="" onClick="return false;" role="button" class="helptext-btn -popup" aria-controls="helptext-ctrl-b">
+                            <span class="glyphicon glyphicon-question-sign icon-blue" aria-hidden="true"></span>
+                            <span class="aria-visible">Informasjon om XXX</span>
+                        </a>
+                        <div class="helptext-hld" aria-live="polite" role="region" id="helptext-ctrl-b" tabindex="0"> 
+                            <div class="helptext-cnt">
+                                Vivamus blandit nunc dui, sed bibendum erat posuere non. Etiam posuere diam et consequat lacinia. Sed elit mauris, ullamcorper eget tellus a, bibendum mollis sapien.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </div>
 
@@ -1063,6 +1222,37 @@
 <script type="application/javascript" src="js/shBrushJScript.js"></script>
 <script type="application/javascript" src="js/ldirValidation.js"></script>
 <script>
+$('#saksbehandler-radio').click();
+setTimeout( function() { $('#soeker-radio').click(); }, 50);
+//setTimeout( function() { $('#saksbehandler-radio').click(); }, 50);
+
+function changeUser( user ) {
+    if ( user === 'soeker' ) {
+        $('body').removeClass('saksbehandler').addClass('soeker');
+        $('.user-container').removeClass('container-fluid').addClass('container');
+    } else {
+        $('body').removeClass('soeker').addClass('saksbehandler');
+        $('.user-container').removeClass('container').addClass('container-fluid');
+    }
+}
+
+function toggleHelpText( e ) {
+    e.preventDefault();
+
+    var btn = $(e.currentTarget), holder = btn.next();
+    var mode = '-show-text', has = btn.hasClass( mode );
+
+    if ( has ) {
+        btn.removeClass( mode );
+        holder.removeClass( mode );
+
+    } else {
+        btn.addClass( mode );
+        holder.addClass( mode );        
+    }
+    holder.attr('aria-hidden', has ).attr('aria-expanded', ! has );
+}
+
 $(document).on('ready', function () {
     $('.pre-bush-code').each( function(i,dom) {
         var node = $(dom), parent = node.parent();
