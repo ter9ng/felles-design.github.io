@@ -1172,7 +1172,8 @@ select.form-control.haveErrors:focus {
   text-decoration: none;
 }
 .alert-info,
-.alert-warning-text {
+.alert-warning-text,
+.alert-success {
   background-color: white;
   border-color: #00729A;
   color: inherit;
@@ -1180,11 +1181,13 @@ select.form-control.haveErrors:focus {
   padding-left: 50px;
 }
 .alert-info hr,
-.alert-warning-text hr {
+.alert-warning-text hr,
+.alert-success hr {
   border-top-color: #D9D9D6;
 }
 .alert-info span.glyphicon,
-.alert-warning-text span.glyphicon {
+.alert-warning-text span.glyphicon,
+.alert-success span.glyphicon {
   color: #00729A;
   font-size: 24px;
   float: left;
@@ -1193,26 +1196,56 @@ select.form-control.haveErrors:focus {
   margin: -2px 0 0 -35px;
 }
 .alert-info.no-border,
-.alert-warning-text.no-border {
+.alert-warning-text.no-border,
+.alert-success.no-border {
   border: none;
   background-color: inherit;
   margin-bottom: 0;
 }
 .alert-info a,
-.alert-warning-text a {
+.alert-warning-text a,
+.alert-success a {
   text-decoration: underline;
 }
 .alert-info a[role="button"],
 .alert-warning-text a[role="button"],
+.alert-success a[role="button"],
 .alert-info a.btn,
 .alert-warning-text a.btn,
+.alert-success a.btn,
 .alert-info a.info-message,
 .alert-warning-text a.info-message,
+.alert-success a.info-message,
 .alert-info a.warning-message,
 .alert-warning-text a.warning-message,
+.alert-success a.warning-message,
 .alert-info a.error-message,
-.alert-warning-text a.error-message {
+.alert-warning-text a.error-message,
+.alert-success a.error-message {
   text-decoration: none;
+}
+.alert-success {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #337563;
+  margin: 20px 0 25px 0;
+}
+.alert-success .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.alert-success .close-btn .glyphicon {
+  font-size: 12px;
+  width: 12px;
+  margin: 0;
+}
+.alert-success span.glyphicon {
+  color: #337563;
+}
+.alert-success span.text {
+  display: inline-block;
+  margin-top: 3px;
 }
 .alert-warning-text span.glyphicon {
   color: #FF5D00;

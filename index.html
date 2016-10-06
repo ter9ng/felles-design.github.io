@@ -13,7 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/font/roboto/Roboto-Bold.woff2"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/font/roboto/Roboto-Bold.woff2"/>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="css/felles-design.css" type="text/css"/>
     <link rel="stylesheet" href="css/example.css" type="text/css"/>
@@ -28,10 +29,12 @@
 
 <div id="example-tool">
     <fieldset>
-        <legend>Vis som:</legend>    
-        <input type="radio" name="user" value="soeker" class="input-radio" id="soeker-radio" onChange="javascript:changeUser('soeker')">
+        <legend>Vis som:</legend>
+        <input type="radio" name="user" value="soeker" class="input-radio" id="soeker-radio"
+               onChange="javascript:changeUser('soeker')">
         <label for="soeker-radio">Søker</label>
-        <input type="radio" name="user" value="saksbehandler" class="input-radio" id="saksbehandler-radio" onChange="javascript:changeUser('saksbehandler')">
+        <input type="radio" name="user" value="saksbehandler" class="input-radio" id="saksbehandler-radio"
+               onChange="javascript:changeUser('saksbehandler')">
         <label for="saksbehandler-radio">Saksbehandler</label>
     </fieldset>
 </div>
@@ -44,7 +47,7 @@
             </a>
             <a class="intern-landbruksdirektoratet internal" href="https://www.landbruksdirektoratet.no">
                 <h1>Landbruksdirektoratet</h1>
-            </a>            
+            </a>
             <h1 id="system-name">&lt;Systemnavn&gt;</h1>
             <div class="nav-info pull-right">
                 <div class="head-top">
@@ -52,7 +55,7 @@
                         <li class="text-size-accessibility" role="presentation">
                             <a href="" onClick="return false;">Skriftstørrelse</a>
                             <div class="widget" role="alert">
-                                Hold nede Ctrl-tasten (Win) eller Cmd-tasten (Mac). 
+                                Hold nede Ctrl-tasten (Win) eller Cmd-tasten (Mac).
                                 Trykk på + for å forstørre eller - for å forminske
                             </div>
                         </li>
@@ -65,7 +68,8 @@
                                 <span class="language-nn">Nynorsk</span>
                             </a>
                         </li>
-                        <li class="internal" role="presentation"><a href="" onClick="return false;">Elektroniske tjenester</a></li>
+                        <li class="internal" role="presentation"><a href="" onClick="return false;">Elektroniske
+                            tjenester</a></li>
                         <li class="internal" role="presentation"><a href="" onClick="return false;">Hjelp</a></li>
                     </ul>
                 </div>
@@ -118,7 +122,8 @@
     <nav id="lower" class="navbar navbar-default navbar-static-top">
         <div class="container user-container">
             <div class="navbar-header">
-                <button id="menu-toggle-btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-navbar"
+                <button id="menu-toggle-btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#menu-navbar"
                         aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -126,7 +131,8 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <button id="setting-toggle-btn" type="button" class="navbar-toggle collapsed -setting" data-toggle="collapse" data-target="#user-navbar"
+                <button id="setting-toggle-btn" type="button" class="navbar-toggle collapsed -setting"
+                        data-toggle="collapse" data-target="#user-navbar"
                         aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle setting</span>
                     <span class="icon-bar"></span>
@@ -159,7 +165,8 @@
                         <a href="" onClick="$('body').toggleClass('hoykontrast'); return false;">Høykontranst</a>
                     </li>
                     <li class="language-option" role="presentation"><a href="" onClick="return false;">Bokmål</a></li>
-                    <li class="internal" role="presentation"><a href="" onClick="return false;">Elektroniske tjenester</a></li>
+                    <li class="internal" role="presentation"><a href="" onClick="return false;">Elektroniske
+                        tjenester</a></li>
                     <li class="internal" role="presentation"><a href="" onClick="return false;">Hjelp</a></li>
                     <li class="logout" role="presentation"><a href="" onClick="return false;">Logg ut</a></li>
                 </ul>
@@ -250,7 +257,10 @@
                     <div class="col-md-12">
                         <p>Body text</p>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sit amet lectus id porta. Donec tincidunt tincidunt justo. Donec ante lectus, fermentum at rutrum vel, vestibulum a libero. Nullam congue leo vel risus iaculis imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sit amet lectus id
+                            porta. Donec tincidunt tincidunt justo. Donec ante lectus, fermentum at rutrum vel,
+                            vestibulum a libero. Nullam congue leo vel risus iaculis imperdiet. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                         </p>
                     </div>
                 </div>
@@ -271,32 +281,77 @@
                     <div class="col-md-12"><h3>Ldir</h3></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#3a2618 / @ldir-brown" style="background-color:#3a2618"></div></div>
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#00729A / @ldir-blue" style="background-color:#00729A"></div></div>
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#9fdcf2 / @ldir-light-blue" style="background-color:#9fdcf2"></div></div>
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#D22630 / @ldir-red" style="background-color:#D22630"></div></div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#3a2618 / @ldir-brown"
+                             style="background-color:#3a2618"></div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#00729A / @ldir-blue"
+                             style="background-color:#00729A"></div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#9fdcf2 / @ldir-light-blue"
+                             style="background-color:#9fdcf2"></div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#D22630 / @ldir-red"
+                             style="background-color:#D22630"></div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#337563 / @ldir-green" style="background-color:#337563"></div></div>
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#58595b / @ldir-gray" style="background-color:#58595b"></div></div>
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#D9D9D6 / @ldir-light-gray" style="background-color:#D9D9D6"></div></div>
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#F5F5F5 / @ldir-well-gray" style="background-color:#F5F5F5"></div></div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#337563 / @ldir-green"
+                             style="background-color:#337563"></div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#58595b / @ldir-gray"
+                             style="background-color:#58595b"></div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#D9D9D6 / @ldir-light-gray"
+                             style="background-color:#D9D9D6"></div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#F5F5F5 / @ldir-well-gray"
+                             style="background-color:#F5F5F5"></div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#e5e5e5 / @ldir-well-in-well-border-gray" style="background-color:#e5e5e5"></div></div>
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#f9f9f9 / @ldir-well-in-well-gray" style="background-color:#f9f9f9"></div></div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#e5e5e5 / @ldir-well-in-well-border-gray"
+                             style="background-color:#e5e5e5"></div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#f9f9f9 / @ldir-well-in-well-gray"
+                             style="background-color:#f9f9f9"></div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12"><h3>Brand</h3></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#00AFD7 / @brand-primary" style="background-color:#00AFD7"></div></div>
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#6ECEB2 / @brand-success" style="background-color:#6ECEB2"></div></div>
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#9C27B0 / @brand-info" style="background-color:#9C27B0"></div></div>
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#ff9800 / @brand-warning" style="background-color:#ff9800"></div></div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#00AFD7 / @brand-primary"
+                             style="background-color:#00AFD7"></div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#6ECEB2 / @brand-success"
+                             style="background-color:#6ECEB2"></div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#9C27B0 / @brand-info"
+                             style="background-color:#9C27B0"></div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#ff9800 / @brand-warning"
+                             style="background-color:#ff9800"></div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 col-xs-6"><div class="color-palette" data-color="#D22630 / @brand-danger" style="background-color:#D22630"></div></div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="color-palette" data-color="#D22630 / @brand-danger"
+                             style="background-color:#D22630"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -521,15 +576,19 @@
                         <label for="like-checkbox">Ja, jeg eier flere tomter</label>
                     </div>
                     <div class="pre-bush-code col-md-12">
-                        <input type="checkbox" name="like-invalid" class="input-checkbox" id="like-invalid-checkbox" value="1" aria-invalid="true">
+                        <input type="checkbox" name="like-invalid" class="input-checkbox" id="like-invalid-checkbox"
+                               value="1" aria-invalid="true">
                         <label for="like-invalid-checkbox">Invalid</label>
                     </div>
                     <div class="pre-bush-code col-md-12">
-                        <input type="checkbox" name="like-disabled" class="input-checkbox" id="like-disabled-checkbox" value="1" disabled aria-disabled="true">
+                        <input type="checkbox" name="like-disabled" class="input-checkbox" id="like-disabled-checkbox"
+                               value="1" disabled aria-disabled="true">
                         <label for="like-disabled-checkbox">Disabled</label>
                     </div>
                     <div class="pre-bush-code col-md-12">
-                        <input type="checkbox" name="like-disabled-checked" class="input-checkbox" id="like-disabled-checked-checkbox" value="1" disabled aria-disabled="true" checked="true">
+                        <input type="checkbox" name="like-disabled-checked" class="input-checkbox"
+                               id="like-disabled-checked-checkbox" value="1" disabled aria-disabled="true"
+                               checked="true">
                         <label for="like-disabled-checked-checkbox">Disabled-checked</label>
                     </div>
                 </div>
@@ -553,9 +612,11 @@
                         <fieldset>
                             <legend>Option</legend>
                             <div>
-                                <input type="radio" name="animal-invalid" value="invalid-a" class="input-radio" id="invalid-a-radio" aria-invalid="true">
+                                <input type="radio" name="animal-invalid" value="invalid-a" class="input-radio"
+                                       id="invalid-a-radio" aria-invalid="true">
                                 <label for="invalid-a-radio">invalid-A</label>
-                                <input type="radio" name="animal-invalid" value="invalid-b" class="input-radio" id="invalid-b-radio" aria-invalid="true">
+                                <input type="radio" name="animal-invalid" value="invalid-b" class="input-radio"
+                                       id="invalid-b-radio" aria-invalid="true">
                                 <label for="invalid-b-radio">invalid-B</label>
                             </div>
                         </fieldset>
@@ -564,9 +625,11 @@
                         <fieldset>
                             <legend>Option</legend>
                             <div>
-                                <input type="radio" name="animal-disabled" value="disabled-a" class="input-radio" id="disabled-a-radio" disabled aria-disabled="true">
+                                <input type="radio" name="animal-disabled" value="disabled-a" class="input-radio"
+                                       id="disabled-a-radio" disabled aria-disabled="true">
                                 <label for="disabled-a-radio">disabled-A</label>
-                                <input type="radio" name="animal-disabled" value="disabled-b" class="input-radio" id="disabled-b-radio" disabled aria-disabled="true">
+                                <input type="radio" name="animal-disabled" value="disabled-b" class="input-radio"
+                                       id="disabled-b-radio" disabled aria-disabled="true">
                                 <label for="disabled-b-radio">disabled-B</label>
                             </div>
                         </fieldset>
@@ -575,9 +638,12 @@
                         <fieldset>
                             <legend>Option</legend>
                             <div>
-                                <input type="radio" name="animal-disabled-checked" value="disabled-checked-a" class="input-radio" id="disabled-checked-a-radio" disabled aria-disabled="true" checked="true">
+                                <input type="radio" name="animal-disabled-checked" value="disabled-checked-a"
+                                       class="input-radio" id="disabled-checked-a-radio" disabled aria-disabled="true"
+                                       checked="true">
                                 <label for="disabled-checked-a-radio">disabled-checked-A</label>
-                                <input type="radio" name="animal-disabled-checked" value="disabled-checked-b" class="input-radio" id="disabled-checked-b-radio" disabled aria-disabled="true">
+                                <input type="radio" name="animal-disabled-checked" value="disabled-checked-b"
+                                       class="input-radio" id="disabled-checked-b-radio" disabled aria-disabled="true">
                                 <label for="disabled-checked-b-radio">disabled-checked-B</label>
                             </div>
                         </fieldset>
@@ -596,56 +662,81 @@
                         <form id="form-validation" method="" action="" novalidate>
                             <div class="form-group">
                                 <label class="ldir-required" for="field-name">Navn</label>
-                                <input type="text" name="name" class="form-control" id="field-name" required aria-required="true" autocomplete="off" spellcheck="false" data-rule="minlength[2]">
+                                <input type="text" name="name" class="form-control" id="field-name" required
+                                       aria-required="true" autocomplete="off" spellcheck="false"
+                                       data-rule="minlength[2]">
                             </div>
                             <div class="form-group">
                                 <label class="ldir-required" for="field-personnumber">Personnummer</label>
-                                <input type="tel" class="form-control" maxlength="12" data-rule="personnumber" autocomplete="off" spellcheck="false" required="" name="personnumber" id="field-personnumber" value="07013200151">
+                                <input type="tel" class="form-control" maxlength="12" data-rule="personnumber"
+                                       autocomplete="off" spellcheck="false" required="" name="personnumber"
+                                       id="field-personnumber" value="07013200151">
                             </div>
                             <div class="form-group">
                                 <label class="ldir-required" for="field-email">E-post</label>
-                                <input type="email" class="form-control" data-rule="email" autocomplete="off" spellcheck="false" required aria-required="true" name="email" id="field-email">
+                                <input type="email" class="form-control" data-rule="email" autocomplete="off"
+                                       spellcheck="false" required aria-required="true" name="email" id="field-email">
                             </div>
                             <div class="form-group">
-                                <label class="ldir-required" for="field-intervalnumber">Interval mellom [-9999,99999]</label>
-                                <input type="tel" class="form-control" maxlength="5" data-rule="number" autocomplete="off" spellcheck="false" required="" name="intervalnumber" id="field-intervalnumber" value="">
+                                <label class="ldir-required" for="field-intervalnumber">Interval mellom
+                                    [-9999,99999]</label>
+                                <input type="tel" class="form-control" maxlength="5" data-rule="number"
+                                       autocomplete="off" spellcheck="false" required="" name="intervalnumber"
+                                       id="field-intervalnumber" value="">
                             </div>
 
                             <div class="form-group">
                                 <label class="ldir-required" for="field-accountnumber">Kontonummer</label>
-                                <input type="tel" class="form-control" maxlength="13" data-rule="accountnumber" autocomplete="off" spellcheck="false" required="" name="accountnumber" id="field-accountnumber">
+                                <input type="tel" class="form-control" maxlength="13" data-rule="accountnumber"
+                                       autocomplete="off" spellcheck="false" required="" name="accountnumber"
+                                       id="field-accountnumber">
                             </div>
                             <div class="form-group">
                                 <label class="ldir-required" for="field-amount">Beløp</label>
-                                <input type="tel" class="form-control" maxlength="13" data-rule="amount" autocomplete="off" spellcheck="false" required aria-required="true" name="amount" id="field-amount" value="1200">
+                                <input type="tel" class="form-control" maxlength="13" data-rule="amount"
+                                       autocomplete="off" spellcheck="false" required aria-required="true" name="amount"
+                                       id="field-amount" value="1200">
                             </div>
                             <div class="form-group">
                                 <label class="ldir-required" for="field-mobile">Mobilnummer</label>
-                                <input type="tel" class="form-control" maxlength="10" data-rule="mobile" autocomplete="off" spellcheck="false" required aria-required="true" name="mobile" id="field-mobile" value="41474947">
+                                <input type="tel" class="form-control" maxlength="10" data-rule="mobile"
+                                       autocomplete="off" spellcheck="false" required aria-required="true" name="mobile"
+                                       id="field-mobile" value="41474947">
                             </div>
                             <div class="form-group">
                                 <label class="ldir-required" for="field-telephone">Telefonnummer</label>
-                                <input type="tel" class="form-control" maxlength="11" data-rule="telephone" autocomplete="off" spellcheck="false" required aria-required="true" name="telephone" id="field-telephone">
+                                <input type="tel" class="form-control" maxlength="11" data-rule="telephone"
+                                       autocomplete="off" spellcheck="false" required aria-required="true"
+                                       name="telephone" id="field-telephone">
                             </div>
                             <div class="form-group">
                                 <label class="ldir-required" for="field-creditcardnumber">Kortnummer</label>
-                                <input type="tel" class="form-control" maxlength="19" data-rule="creditcardnumber" autocomplete="off" spellcheck="false" required aria-required="true" name="creditcardnumber" id="field-creditcardnumber">
+                                <input type="tel" class="form-control" maxlength="19" data-rule="creditcardnumber"
+                                       autocomplete="off" spellcheck="false" required aria-required="true"
+                                       name="creditcardnumber" id="field-creditcardnumber">
                             </div>
                             <div class="form-group">
                                 <label class="ldir-required" for="field-organizationsnumber">Organisasjonsnummer</label>
-                                <input type="tel" class="form-control" maxlength="9" data-rule="organizationsnumber" autocomplete="off" spellcheck="false" required aria-required="true" name="organizationsnumber" id="field-organizationsnumber">
+                                <input type="tel" class="form-control" maxlength="9" data-rule="organizationsnumber"
+                                       autocomplete="off" spellcheck="false" required aria-required="true"
+                                       name="organizationsnumber" id="field-organizationsnumber">
                             </div>
                             <div class="form-group">
-                                <input type="checkbox" name="read" class="input-checkbox" id="read-checkbox" value="1" required aria-required="true">
+                                <input type="checkbox" name="read" class="input-checkbox" id="read-checkbox" value="1"
+                                       required aria-required="true">
                                 <label for="read-checkbox">Ja, jeg har lest alle kravene.</label>
                             </div>
                             <div class="form-group">
                                 <fieldset>
                                     <legend>Jeg bor aleine</legend>
                                     <div>
-                                        <input type="radio" name="living" value="living-a" class="input-radio" id="living-a-radio" required aria-required="true" data-rule="parent[div]">
+                                        <input type="radio" name="living" value="living-a" class="input-radio"
+                                               id="living-a-radio" required aria-required="true"
+                                               data-rule="parent[div]">
                                         <label for="living-a-radio">Ja</label>
-                                        <input type="radio" name="living" value="living-b" class="input-radio" id="living-b-radio" required aria-required="true" data-rule="parent[div]">
+                                        <input type="radio" name="living" value="living-b" class="input-radio"
+                                               id="living-b-radio" required aria-required="true"
+                                               data-rule="parent[div]">
                                         <label for="living-b-radio">Nei</label>
                                     </div>
                                 </fieldset>
@@ -668,32 +759,32 @@
                     <div class="col-md-12">
                         <table class="table table-hover -responsive">
                             <thead>
-                                <tr>
-                                    <th>Row</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Email</th>
-                                </tr>
+                            <tr>
+                                <th>Row</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td data-label="Row">1</td>
-                                    <td data-label="F.name">John</td>
-                                    <td data-label="L.name">Carter</td>
-                                    <td data-label="Email">johncarter@mail.com</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Row">2</td>
-                                    <td data-label="F.name">Peter</td>
-                                    <td data-label="L.name">Parker</td>
-                                    <td data-label="Email">peterparker@mail.com</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Row">3</td>
-                                    <td data-label="F.name">John</td>
-                                    <td data-label="L.name">Rambo</td>
-                                    <td data-label="Email">johnrambo@mail.com</td>
-                                </tr>
+                            <tr>
+                                <td data-label="Row">1</td>
+                                <td data-label="F.name">John</td>
+                                <td data-label="L.name">Carter</td>
+                                <td data-label="Email">johncarter@mail.com</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Row">2</td>
+                                <td data-label="F.name">Peter</td>
+                                <td data-label="L.name">Parker</td>
+                                <td data-label="Email">peterparker@mail.com</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Row">3</td>
+                                <td data-label="F.name">John</td>
+                                <td data-label="L.name">Rambo</td>
+                                <td data-label="Email">johnrambo@mail.com</td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -751,36 +842,264 @@
                     <div class="pre-bush-code col-md-12">
                         <table class="table table-hover -applicationsform">
                             <thead>
-                                <tr class="align-bottom">
-                                    <th id="thead-1-1" class="-width-50">Tilskuddsordning</th>
-                                    <th id="thead-1-2" class="-nowrap"><div>Søknadsfrist 20.</div><div>august</div></th>
-                                    <th id="thead-1-3" class="-nowrap"><div>Søknadsfrist 20.</div></div>januar</div></th>
-                                    <th id="thead-1-4" class="-nowrap"><div>Budsjett</div><div>2014</div></th>
-                                    <th id="thead-1-5" class="-nowrap"><div>Budsjett</div><div>2015</div></th>
-                                </tr>
+                            <tr class="align-bottom">
+                                <th id="thead-1-1" class="-width-50">Tilskuddsordning</th>
+                                <th id="thead-1-2" class="-nowrap">
+                                    <div>Søknadsfrist 20.</div>
+                                    <div>august</div>
+                                </th>
+                                <th id="thead-1-3" class="-nowrap">
+                                    <div>Søknadsfrist 20.</div>
+                    </div>
+                    januar
+                </div>
+                </th>
+                <th id="thead-1-4" class="-nowrap">
+                    <div>Budsjett</div>
+                    <div>2014</div>
+                </th>
+                <th id="thead-1-5" class="-nowrap">
+                    <div>Budsjett</div>
+                    <div>2015</div>
+                </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td id="tbody-1-1" class="-align-middle">Areal- og kulturlandskapstilskudd</td>
+                    <td id="tbody-1-2">&nbsp;</td>
+                    <td id="tbody-1-3">&nbsp;</td>
+                    <td id="tbody-1-4"><input type="tel" aria-labelledby="tbody-1-1 thead-1-4" required
+                                              aria-required="true" class="form-control"></td>
+                    <td id="tbody-1-5"><input type="tel" aria-labelledby="tbody-1-1 thead-1-5" required
+                                              aria-required="true" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td id="tbody-2-1" class="-align-middle">
+                        <div>Tilskudd til husdyr</div>
+                        <div>(inkl. tilskudd til lammeslakt)</div>
+                    </td>
+                    <td id="tbody-2-2">&nbsp;</td>
+                    <td id="tbody-2-3">&nbsp;</td>
+                    <td id="tbody-2-4"><input type="tel" aria-labelledby="tbody-2-1 thead-1-4" required
+                                              aria-required="true" class="form-control"></td>
+                    <td id="tbody-2-5"><input type="tel" aria-labelledby="tbody-2-1 thead-1-5" required
+                                              aria-required="true" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td id="tbody-3-1" class="-align-middle">Tilskudd til dyr på beite</td>
+                    <td id="tbody-3-2">&nbsp;</td>
+                    <td id="tbody-3-3">&nbsp;</td>
+                    <td id="tbody-3-4"><input type="tel" aria-labelledby="tbody-3-1 thead-1-4" required
+                                              aria-required="true" class="form-control"></td>
+                    <td id="tbody-3-5"><input type="tel" aria-labelledby="tbody-3-1 thead-1-5" required
+                                              aria-required="true" class="form-control"></td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+</div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Number list</h2>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Tab</h3>
+                <div class="pre-bush-code">
+                    <ol class="number-list -tab" role="tablist">
+                        <li role="presentation">
+                            <a href="#" role="tab" aria-selected="false" aria-controls="number-list-panel-01"
+                               onClick="event.preventDefault();">
+                                Tommy Nilsen
+                            </a>
+                        </li>
+                        <li class="active" role="presentation">
+                            <a href="#" role="tab" aria-selected="true" aria-controls="number-list-panel-01"
+                               onClick="event.preventDefault();">
+                                Tine Sofie Mikkelsen
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" role="tab" aria-selected="false" aria-controls="number-list-panel-01"
+                               onClick="event.preventDefault();">
+                                Christoffer Pettersen
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" role="tab" aria-selected="false" aria-controls="number-list-panel-01"
+                               onClick="event.preventDefault();">
+                                Julie Johannesen
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#" role="tab" aria-selected="false" aria-controls="number-list-panel-01"
+                               onClick="event.preventDefault();">
+                                Sebastian Olsen
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>List</h3>
+                <div class="pre-bush-code">
+                    <ol class="number-list">
+                        <li>One two three</li>
+                        <li>Four five six</li>
+                        <li>Seven eight nine ten</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Tiltak mot forurensing</h2>
+    </div>
+
+
+    <div class="panel-body">
+        <p>Klimaendringer, vekst i folketall, endret arealbruk og urbanisering, og industri- og
+            landbruksaktiviteter er noen årsaker til forurensing av vann. Store deler av verdens forekomster av
+            grunnvann og overflatevann er så forurenset at det utgjør en risiko for mennesker og vannlevende
+            organismer. </p>
+
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                           aria-expanded="true"
+                           aria-controls="collapseOne">
+                            Ingen jordbearbeiding, ikke prioritert område
+                            <span class="">
+                                        Sum: 28
+                                    </span>
+                        </a>
+
+
+                    </h4>
+                </div>
+
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                     aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <p>
+                                            <label for="dekar">Søkt om</label>
+                                            <input id="dekar" type="text" class="form-control"/> dekar
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Row</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td id="tbody-1-1" class="-align-middle">Areal- og kulturlandskapstilskudd</td>
-                                    <td id="tbody-1-2">&nbsp;</td>
-                                    <td id="tbody-1-3">&nbsp;</td>
-                                    <td id="tbody-1-4"><input type="tel" aria-labelledby="tbody-1-1 thead-1-4" required aria-required="true" class="form-control"></td>
-                                    <td id="tbody-1-5"><input type="tel" aria-labelledby="tbody-1-1 thead-1-5" required aria-required="true" class="form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td id="tbody-2-1" class="-align-middle"><div>Tilskudd til husdyr</div><div>(inkl. tilskudd til lammeslakt)</div></td>
-                                    <td id="tbody-2-2">&nbsp;</td>
-                                    <td id="tbody-2-3">&nbsp;</td>
-                                    <td id="tbody-2-4"><input type="tel" aria-labelledby="tbody-2-1 thead-1-4" required aria-required="true" class="form-control"></td>
-                                    <td id="tbody-2-5"><input type="tel" aria-labelledby="tbody-2-1 thead-1-5" required aria-required="true" class="form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td id="tbody-3-1" class="-align-middle">Tilskudd til dyr på beite</td>
-                                    <td id="tbody-3-2">&nbsp;</td>
-                                    <td id="tbody-3-3">&nbsp;</td>
-                                    <td id="tbody-3-4"><input type="tel" aria-labelledby="tbody-3-1 thead-1-4" required aria-required="true" class="form-control"></td>
-                                    <td id="tbody-3-5"><input type="tel" aria-labelledby="tbody-3-1 thead-1-5" required aria-required="true" class="form-control"></td>
-                                </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>Carter</td>
+                                <td>johncarter@mail.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Peter</td>
+                                <td>Parker</td>
+                                <td>peterparker@mail.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>John</td>
+                                <td>Rambo</td>
+                                <td>johnrambo@mail.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Kommentar til bruker</p>
+
+                                <form>
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-group" id="accordion-closed" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion-closed" href="#collapseTwo"
+                           aria-expanded="false"
+                           aria-controls="collapseTwo"
+                           class="collapsed">
+                            Ingen jordbearbeiding, prioritert område
+                            <span class="pull-right">
+                                Sum: 28
+                            </span>
+                        </a>
+                    </h4>
+                </div>
+
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Row</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>Carter</td>
+                                <td>johncarter@mail.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Peter</td>
+                                <td>Parker</td>
+                                <td>peterparker@mail.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>John</td>
+                                <td>Rambo</td>
+                                <td>johnrambo@mail.com</td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -788,429 +1107,253 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2>Number list</h2>
-            </div>
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Tab</h3>
-                        <div class="pre-bush-code">
-                            <ol class="number-list -tab" role="tablist">
-                                <li role="presentation">
-                                    <a href="#" role="tab" aria-selected="false" aria-controls="number-list-panel-01" onClick="event.preventDefault();">
-                                        Tommy Nilsen
-                                    </a>
-                                </li>
-                                <li class="active" role="presentation">
-                                    <a href="#" role="tab" aria-selected="true" aria-controls="number-list-panel-01" onClick="event.preventDefault();">
-                                        Tine Sofie Mikkelsen
-                                    </a>
-                                </li>
-                                <li role="presentation">
-                                    <a href="#" role="tab" aria-selected="false" aria-controls="number-list-panel-01" onClick="event.preventDefault();">
-                                        Christoffer Pettersen
-                                    </a>
-                                </li>
-                                <li role="presentation">
-                                    <a href="#" role="tab" aria-selected="false" aria-controls="number-list-panel-01" onClick="event.preventDefault();">
-                                        Julie Johannesen
-                                    </a>
-                                </li>
-                                <li role="presentation">
-                                    <a href="#" role="tab" aria-selected="false" aria-controls="number-list-panel-01" onClick="event.preventDefault();">
-                                        Sebastian Olsen
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>List</h3>
-                        <div class="pre-bush-code">
-                            <ol class="number-list">
-                                <li>One two three</li>
-                                <li>Four five six</li>
-                                <li>Seven eight nine ten</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2>Tiltak mot forurensing</h2>
-            </div>
-
-
-            <div class="panel-body">
-                <p>Klimaendringer, vekst i folketall, endret arealbruk og urbanisering, og industri- og
-                    landbruksaktiviteter er noen årsaker til forurensing av vann. Store deler av verdens forekomster av
-                    grunnvann og overflatevann er så forurenset at det utgjør en risiko for mennesker og vannlevende
-                    organismer. </p>
-
-
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                   aria-expanded="true"
-                                   aria-controls="collapseOne">
-                                    Ingen jordbearbeiding, ikke prioritert område
-                                    <span class="">
-                                        Sum: 28
-                                    </span>
-                                </a>
-
-
-                            </h4>
-                        </div>
-
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                             aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <form class="form-inline">
-                                            <div class="form-group">
-                                                <p>
-                                                    <label for="dekar">Søkt om</label>
-                                                    <input id="dekar" type="text" class="form-control"/> dekar
-                                                </p>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
-                                        <th>Row</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Email</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>John</td>
-                                        <td>Carter</td>
-                                        <td>johncarter@mail.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Peter</td>
-                                        <td>Parker</td>
-                                        <td>peterparker@mail.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>John</td>
-                                        <td>Rambo</td>
-                                        <td>johnrambo@mail.com</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <p>Kommentar til bruker</p>
-
-                                        <form>
-                                            <div class="form-group">
-                                                <textarea class="form-control" rows="3"></textarea>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel-group" id="accordion-closed" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion-closed" href="#collapseTwo"
-                                   aria-expanded="false"
-                                   aria-controls="collapseTwo"
-                                   class="collapsed">
-                                    Ingen jordbearbeiding, prioritert område
-                            <span class="pull-right">
-                                Sum: 28
-                            </span>
-                                </a>
-                            </h4>
-                        </div>
-
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                             aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
-                                        <th>Row</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Email</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>John</td>
-                                        <td>Carter</td>
-                                        <td>johncarter@mail.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Peter</td>
-                                        <td>Parker</td>
-                                        <td>peterparker@mail.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>John</td>
-                                        <td>Rambo</td>
-                                        <td>johnrambo@mail.com</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="btn-toolbar" role="group">
-                            <button type="button" class="btn btn-primary">Godkjenn</button>
-                            <button type="button" class="btn btn-default">Avbryt</button>
-                        </div>
-                    </div>
-                    <!--
-                    <div class="col-xs-offset-0 col-sm-offset-3 col-xs-12 col-sm-5">
-                        <div class="btn-toolbar pull-right" role="group">
-                            <button type="button" class="btn btn-danger">Avslå</button>
-                            <button type="button" class="btn btn-warning">Avvis</button>
-                            <button type="button" class="btn btn-primary">Godkjenn</button>
-                        </div>
-                    </div>
-                    -->
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2>Wells</h2>
-            </div>
-
-            <div class="panel-body">
-                <div class="well">
-                    <legend>
-                        Well example
-                    </legend>
-                    <p>
-                        Some text Some textSome textSome textSome textSome textSome textSome textSome textSome textSome
-                        textSome textSome textSome text
-                        Some textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome
-                        textSome text
-                    </p>
-
-                    <div class="well">
-                        A well in a well
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2>Info boks</h2>
-            </div>
-
-            <div class="panel-body">
-                <div class="well">
-                    <div class="alert alert-info">
-                        <span class="glyphicon glyphicon-info-sign"></span>
-                        dette erer en medium viktig info tekstDette er en medium viktig info tekstDette er en medium
-                        viktig info tekst dette er en link: <a href="#">Link til noe spennende</a>
-                    </div>
-                </div>
-
-                <div class="well">
-                    <div class="alert alert-info no-border">
-                        <span class="glyphicon glyphicon-info-sign"></span>
-
-                        <p>Oppdager du feil i opplysningene om foretaket ditt, må du endre disse i Enhetsregisteret.</p>
-
-                        <p>Er driftssenteret ditt feil må du kontakte din kommune.</p>
-                    </div>
-                </div>
-
-                <div class="well">
-                    <div class="alert alert-warning-text no-border">
-                        <span class="glyphicon glyphicon-exclamation-sign"></span>
-
-                        <p>Oppdager du feil i opplysningene om foretaket ditt, må du endre disse i Enhetsregisteret.</p>
-
-                        <p>Er driftssenteret ditt feil må du kontakte din kommune.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2>Error melding</h2>
-            </div>
-
-            <div class="panel-body">
-                <div class="alert alert-danger collection">
-                    <h3>Søknaden inneholder feil og kan ikke sendes:</h3>
-
-                    <div class="error-container">
-                        <h4>Seksjon</h4>
-
-                        <div class="error-messages">
-                            <a class="error-message" tabindex="0">Error message 1</a>
-                            <a class="error-message" tabindex="0">Error message 2</a>
-                        </div>
-
-                        <h4>Seksjon2</h4>
-
-                        <div class="error-messages">
-                            <a class="error-message" tabindex="0">Error message 3</a>
-                            <a class="error-message" tabindex="0">Error message 4</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="alert alert-warning collection">
-                    <h3>Vennligst se over følgende feil før søknaden sendes inn</h3>
-
-                    <div class="warning-container">
-                        <h4>Seksjon</h4>
-
-                        <div class="warning-messages">
-                            <a class="warning-message" tabindex="0">Warning message 1</a>
-                            <a class="warning-message" tabindex="0">Warning message 2</a>
-                        </div>
-
-                        <h4>Seksjon 2</h4>
-
-                        <div class="warning-messages">
-                            <a class="warning-message" tabindex="0">Warning message 3</a>
-                            <a class="warning-message" tabindex="0">Warning message 4</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="alert alert-info collection">
-                    <h3>Vennligst se over følgende feil før søknaden sendes inn</h3>
-
-                    <div class="info-container">
-                        <h4>Seksjon</h4>
-
-                        <div class="info-messages">
-                            <a class="info-message" tabindex="0">Info message 1</a>
-                            <a class="info-message" tabindex="0">Info message 2</a>
-                        </div>
-
-                        <h4>Seksjon 2</h4>
-
-                        <div class="info-messages">
-                            <a class="info-message" tabindex="0">Info message 3</a>
-                            <a class="info-message" tabindex="0">Info message 4</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2>Spinner</h2>
-            </div>
-
-            <div class="panel-body">
-                <div>
-                    <h3>Generell</h3>
-                    <div class="pre-bush-code">
-                        <div class="-display-spinner"></div>                    
-                    </div>
-                </div>
-                <div>
-                    <h3>Button</h3>
-                    <div class="pre-bush-code">
-                        <button class="btn btn-primary -display-spinner">Lagre</button>
-                        <button class="btn btn-default -display-spinner">Avbryt</button>
-                    </div>
-                </div>
-
-                <!--
-                <div>
-                -->
-
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
 
             </div>
         </div>
 
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2>Hjelpetekst</h2>
-            </div>
-
-            <div class="panel-body">
-                <div class="pre-bush-code">
-                    <h3>Inline</h3>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor nibh enim. Curabitur quis nunc lobortis, lobortis felis ac, porttitor metus. Quisque ut nulla vehicula sem placerat luctus. Ut ac iaculis turpis. Quisque gravida ullamcorper magna id ullamcorper. Integer vulputate nibh at sapien suscipit, eu fringilla ligula sollicitudin.
-                        <a href="" role="button" onClick="javascript:toggleHelpText(event)" class="helptext-btn" aria-controls="helptext-ctrl-a">
-                            <span class="glyphicon glyphicon-question-sign icon-blue" aria-hidden="true"></span>
-                            <span class="aria-visible">Informasjon om XXX</span>
-                        </a>
-                        <div class="helptext-hld" aria-hidden="true" aria-live="polite" role="region" id="helptext-ctrl-a" aria-expanded="false"> 
-                            <div class="helptext-cnt">
-                                Vivamus blandit nunc dui, sed bibendum erat posuere non. Etiam posuere diam et consequat lacinia. Sed elit mauris, ullamcorper eget tellus a, bibendum mollis sapien.
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div class="btn-toolbar" role="group">
+                    <button type="button" class="btn btn-primary">Godkjenn</button>
+                    <button type="button" class="btn btn-default">Avbryt</button>
                 </div>
-                <div class="pre-bush-code">
-                    <h3>Popup</h3>
-                    <div class="position-relative" style="width: 600px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor nibh enim. Curabitur quis nunc lobortis, lobortis felis ac, porttitor metus. Quisque ut nulla vehicula sem placerat luctus. Ut ac iaculis turpis. Quisque gravida ullamcorper magna id ullamcorper. Integer vulputate nibh at sapien suscipit, eu fringilla ligula sollicitudin.
-                        <a href="" onClick="return false;" role="button" class="helptext-btn -popup" aria-controls="helptext-ctrl-b">
-                            <span class="glyphicon glyphicon-question-sign icon-blue" aria-hidden="true"></span>
-                            <span class="aria-visible">Informasjon om XXX</span>
-                        </a>
-                        <div class="helptext-hld" aria-live="polite" role="region" id="helptext-ctrl-b" tabindex="0"> 
-                            <div class="helptext-cnt">
-                                Vivamus blandit nunc dui, sed bibendum erat posuere non. Etiam posuere diam et consequat lacinia. Sed elit mauris, ullamcorper eget tellus a, bibendum mollis sapien.
-                            </div>
-                        </div>
+            </div>
+            <!--
+            <div class="col-xs-offset-0 col-sm-offset-3 col-xs-12 col-sm-5">
+                <div class="btn-toolbar pull-right" role="group">
+                    <button type="button" class="btn btn-danger">Avslå</button>
+                    <button type="button" class="btn btn-warning">Avvis</button>
+                    <button type="button" class="btn btn-primary">Godkjenn</button>
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Wells</h2>
+    </div>
+
+    <div class="panel-body">
+        <div class="well">
+            <legend>
+                Well example
+            </legend>
+            <p>
+                Some text Some textSome textSome textSome textSome textSome textSome textSome textSome textSome
+                textSome textSome textSome text
+                Some textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome
+                textSome text
+            </p>
+
+            <div class="well">
+                A well in a well
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Info boks</h2>
+    </div>
+
+    <div class="panel-body">
+        <div class="well">
+            <div class="alert alert-info">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                dette erer en medium viktig info tekstDette er en medium viktig info tekstDette er en medium
+                viktig info tekst dette er en link: <a href="#">Link til noe spennende</a>
+            </div>
+        </div>
+
+        <div class="well">
+            <div class="alert alert-info no-border">
+                <span class="glyphicon glyphicon-info-sign"></span>
+
+                <p>Oppdager du feil i opplysningene om foretaket ditt, må du endre disse i Enhetsregisteret.</p>
+
+                <p>Er driftssenteret ditt feil må du kontakte din kommune.</p>
+            </div>
+        </div>
+
+        <div class="well">
+            <div class="alert alert-warning-text no-border">
+                <span class="glyphicon glyphicon-exclamation-sign"></span>
+
+                <p>Oppdager du feil i opplysningene om foretaket ditt, må du endre disse i Enhetsregisteret.</p>
+
+                <p>Er driftssenteret ditt feil må du kontakte din kommune.</p>
+            </div>
+        </div>
+
+        <div class="well">
+            <div class="pre-bush-code">
+                <div class="alert alert-success">
+                    <a href="#" role="button" class="close-btn">
+                        <span aria-hidden="true" class="glyphicon glyphicon-remove"></span>
+                        <span class="aria-visible"></span>
+                    </a>
+                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="text">Dette er en success alert</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Error melding</h2>
+    </div>
+
+    <div class="panel-body">
+        <div class="alert alert-danger collection">
+            <h3>Søknaden inneholder feil og kan ikke sendes:</h3>
+
+            <div class="error-container">
+                <h4>Seksjon</h4>
+
+                <div class="error-messages">
+                    <a class="error-message" tabindex="0">Error message 1</a>
+                    <a class="error-message" tabindex="0">Error message 2</a>
+                </div>
+
+                <h4>Seksjon2</h4>
+
+                <div class="error-messages">
+                    <a class="error-message" tabindex="0">Error message 3</a>
+                    <a class="error-message" tabindex="0">Error message 4</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-warning collection">
+            <h3>Vennligst se over følgende feil før søknaden sendes inn</h3>
+
+            <div class="warning-container">
+                <h4>Seksjon</h4>
+
+                <div class="warning-messages">
+                    <a class="warning-message" tabindex="0">Warning message 1</a>
+                    <a class="warning-message" tabindex="0">Warning message 2</a>
+                </div>
+
+                <h4>Seksjon 2</h4>
+
+                <div class="warning-messages">
+                    <a class="warning-message" tabindex="0">Warning message 3</a>
+                    <a class="warning-message" tabindex="0">Warning message 4</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info collection">
+            <h3>Vennligst se over følgende feil før søknaden sendes inn</h3>
+
+            <div class="info-container">
+                <h4>Seksjon</h4>
+
+                <div class="info-messages">
+                    <a class="info-message" tabindex="0">Info message 1</a>
+                    <a class="info-message" tabindex="0">Info message 2</a>
+                </div>
+
+                <h4>Seksjon 2</h4>
+
+                <div class="info-messages">
+                    <a class="info-message" tabindex="0">Info message 3</a>
+                    <a class="info-message" tabindex="0">Info message 4</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Spinner</h2>
+    </div>
+
+    <div class="panel-body">
+        <div>
+            <h3>Generell</h3>
+            <div class="pre-bush-code">
+                <div class="-display-spinner"></div>
+            </div>
+        </div>
+        <div>
+            <h3>Button</h3>
+            <div class="pre-bush-code">
+                <button class="btn btn-primary -display-spinner">Lagre</button>
+                <button class="btn btn-default -display-spinner">Avbryt</button>
+            </div>
+        </div>
+
+        <!--
+        <div>
+        -->
+
+
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Hjelpetekst</h2>
+    </div>
+
+    <div class="panel-body">
+        <div class="pre-bush-code">
+            <h3>Inline</h3>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor nibh enim. Curabitur quis
+                nunc lobortis, lobortis felis ac, porttitor metus. Quisque ut nulla vehicula sem placerat luctus. Ut ac
+                iaculis turpis. Quisque gravida ullamcorper magna id ullamcorper. Integer vulputate nibh at sapien
+                suscipit, eu fringilla ligula sollicitudin.
+                <a href="" role="button" onClick="javascript:toggleHelpText(event)" class="helptext-btn"
+                   aria-controls="helptext-ctrl-a">
+                    <span class="glyphicon glyphicon-question-sign icon-blue" aria-hidden="true"></span>
+                    <span class="aria-visible">Informasjon om XXX</span>
+                </a>
+                <div class="helptext-hld" aria-hidden="true" aria-live="polite" role="region" id="helptext-ctrl-a"
+                     aria-expanded="false">
+                    <div class="helptext-cnt">
+                        Vivamus blandit nunc dui, sed bibendum erat posuere non. Etiam posuere diam et consequat
+                        lacinia. Sed elit mauris, ullamcorper eget tellus a, bibendum mollis sapien.
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="pre-bush-code">
+            <h3>Popup</h3>
+            <div class="position-relative" style="width: 600px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor nibh enim. Curabitur quis
+                nunc lobortis, lobortis felis ac, porttitor metus. Quisque ut nulla vehicula sem placerat luctus. Ut ac
+                iaculis turpis. Quisque gravida ullamcorper magna id ullamcorper. Integer vulputate nibh at sapien
+                suscipit, eu fringilla ligula sollicitudin.
+                <a href="" onClick="return false;" role="button" class="helptext-btn -popup"
+                   aria-controls="helptext-ctrl-b">
+                    <span class="glyphicon glyphicon-question-sign icon-blue" aria-hidden="true"></span>
+                    <span class="aria-visible">Informasjon om XXX</span>
+                </a>
+                <div class="helptext-hld" aria-live="polite" role="region" id="helptext-ctrl-b" tabindex="0">
+                    <div class="helptext-cnt">
+                        Vivamus blandit nunc dui, sed bibendum erat posuere non. Etiam posuere diam et consequat
+                        lacinia. Sed elit mauris, ullamcorper eget tellus a, bibendum mollis sapien.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 </div>
 
 <script type="application/javascript" src="js/jquery-2.1.4.min.js"></script>
@@ -1222,64 +1365,68 @@
 <script type="application/javascript" src="js/shBrushJScript.js"></script>
 <script type="application/javascript" src="js/ldirValidation.js"></script>
 <script>
-$('#saksbehandler-radio').click();
-setTimeout( function() { $('#soeker-radio').click(); }, 50);
-//setTimeout( function() { $('#saksbehandler-radio').click(); }, 50);
+    $('#saksbehandler-radio').click();
+    setTimeout(function () {
+        $('#soeker-radio').click();
+    }, 50);
+    //setTimeout( function() { $('#saksbehandler-radio').click(); }, 50);
 
-function changeUser( user ) {
-    if ( user === 'soeker' ) {
-        $('body').removeClass('saksbehandler').addClass('soeker');
-        $('.user-container').removeClass('container-fluid').addClass('container');
-    } else {
-        $('body').removeClass('soeker').addClass('saksbehandler');
-        $('.user-container').removeClass('container').addClass('container-fluid');
+    function changeUser(user) {
+        if (user === 'soeker') {
+            $('body').removeClass('saksbehandler').addClass('soeker');
+            $('.user-container').removeClass('container-fluid').addClass('container');
+        } else {
+            $('body').removeClass('soeker').addClass('saksbehandler');
+            $('.user-container').removeClass('container').addClass('container-fluid');
+        }
     }
-}
 
-function toggleHelpText( e ) {
-    e.preventDefault();
+    function toggleHelpText(e) {
+        e.preventDefault();
 
-    var btn = $(e.currentTarget), holder = btn.next();
-    var mode = '-show-text', has = btn.hasClass( mode );
+        var btn = $(e.currentTarget), holder = btn.next();
+        var mode = '-show-text', has = btn.hasClass(mode);
 
-    if ( has ) {
-        btn.removeClass( mode );
-        holder.removeClass( mode );
+        if (has) {
+            btn.removeClass(mode);
+            holder.removeClass(mode);
 
-    } else {
-        btn.addClass( mode );
-        holder.addClass( mode );        
+        } else {
+            btn.addClass(mode);
+            holder.addClass(mode);
+        }
+        holder.attr('aria-hidden', has).attr('aria-expanded', !has);
     }
-    holder.attr('aria-hidden', has ).attr('aria-expanded', ! has );
-}
 
-$(document).on('ready', function () {
-    $('.pre-bush-code').each( function(i,dom) {
-        var node = $(dom), parent = node.parent();
-        $(
-            '<div class="lib-code">'+
-                '<div class="code-tool">'+
-                    //'<a href="#" class="code-refresh">Refresh</a>'+
-                    '<a href="#" class="code-toggler">Toogler</a>'+
-                '</div>'+'<pre class="brush: js">'+node.html()+'</pre>'+
-            '</div>'
-        ).appendTo( node ).find('.code-tool a').on('click', function( e ) {
-            e.preventDefault();
-            var btn = $( e.currentTarget );
-            if ( btn.hasClass('code-toggler') ) {
-                btn.closest('.lib-code').toggleClass('-open');
-            }  else if ( btn.hasClass('code-refresh') ) {
-                var lib = btn.closest('.lib-code');
-                lib.children().not('.code-tool').remove();
-                $( '<pre class="brush: js">'+lib.parent().html()+'</pre>' )
-                    .appendTo( lib ).find('.lib-code').remove();
-                setTimeout( function() {  SyntaxHighlighter.all(); }, 1000);
-            }
+    $(document).on('ready', function () {
+        $('.pre-bush-code').each(function (i, dom) {
+            var node = $(dom), parent = node.parent();
+            $(
+                '<div class="lib-code">' +
+                '<div class="code-tool">' +
+                //'<a href="#" class="code-refresh">Refresh</a>'+
+                '<a href="#" class="code-toggler">Toogler</a>' +
+                '</div>' + '<pre class="brush: js">' + node.html() + '</pre>' +
+                '</div>'
+            ).appendTo(node).find('.code-tool a').on('click', function (e) {
+                e.preventDefault();
+                var btn = $(e.currentTarget);
+                if (btn.hasClass('code-toggler')) {
+                    btn.closest('.lib-code').toggleClass('-open');
+                } else if (btn.hasClass('code-refresh')) {
+                    var lib = btn.closest('.lib-code');
+                    lib.children().not('.code-tool').remove();
+                    $('<pre class="brush: js">' + lib.parent().html() + '</pre>')
+                        .appendTo(lib).find('.lib-code').remove();
+                    setTimeout(function () {
+                        SyntaxHighlighter.all();
+                    }, 1000);
+                }
+            });
         });
+        SyntaxHighlighter.all();
+        $('#form-validation').ldirValidation();
     });
-    SyntaxHighlighter.all();
-    $('#form-validation').ldirValidation();
-});
 </script>
 </body>
 </html>
