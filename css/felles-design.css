@@ -1173,7 +1173,8 @@ select.form-control.haveErrors:focus {
 }
 .alert-info,
 .alert-warning-text,
-.alert-success {
+.alert-success,
+.alert-warning {
   background-color: white;
   border-color: #00729A;
   color: inherit;
@@ -1182,12 +1183,14 @@ select.form-control.haveErrors:focus {
 }
 .alert-info hr,
 .alert-warning-text hr,
-.alert-success hr {
+.alert-success hr,
+.alert-warning hr {
   border-top-color: #D9D9D6;
 }
 .alert-info span.glyphicon,
 .alert-warning-text span.glyphicon,
-.alert-success span.glyphicon {
+.alert-success span.glyphicon,
+.alert-warning span.glyphicon {
   color: #00729A;
   font-size: 24px;
   float: left;
@@ -1197,32 +1200,62 @@ select.form-control.haveErrors:focus {
 }
 .alert-info.no-border,
 .alert-warning-text.no-border,
-.alert-success.no-border {
+.alert-success.no-border,
+.alert-warning.no-border {
   border: none;
   background-color: inherit;
   margin-bottom: 0;
 }
 .alert-info a,
 .alert-warning-text a,
-.alert-success a {
+.alert-success a,
+.alert-warning a {
   text-decoration: underline;
 }
 .alert-info a[role="button"],
 .alert-warning-text a[role="button"],
 .alert-success a[role="button"],
+.alert-warning a[role="button"],
 .alert-info a.btn,
 .alert-warning-text a.btn,
 .alert-success a.btn,
+.alert-warning a.btn,
 .alert-info a.info-message,
 .alert-warning-text a.info-message,
 .alert-success a.info-message,
+.alert-warning a.info-message,
 .alert-info a.warning-message,
 .alert-warning-text a.warning-message,
 .alert-success a.warning-message,
+.alert-warning a.warning-message,
 .alert-info a.error-message,
 .alert-warning-text a.error-message,
-.alert-success a.error-message {
+.alert-success a.error-message,
+.alert-warning a.error-message {
   text-decoration: none;
+}
+.alert-warning {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #FF5D00;
+  margin: 20px 0 25px 0;
+}
+.alert-warning .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.alert-warning .close-btn .glyphicon {
+  font-size: 12px;
+  width: 12px;
+  margin: 0;
+}
+.alert-warning span.glyphicon {
+  color: #FF5D00;
+}
+.alert-warning span.text {
+  display: inline-block;
+  margin-top: 3px;
 }
 .alert-success {
   position: relative;
@@ -1261,12 +1294,6 @@ select.form-control.haveErrors:focus {
   color: #D22630;
   background-color: #fff;
   border: 2px solid #D22630;
-  margin: 20px 0 25px 0;
-}
-.alert-warning {
-  color: #FF5D00;
-  background-color: #fff;
-  border: 2px solid #FF5D00;
   margin: 20px 0 25px 0;
 }
 input[type="radio"],
