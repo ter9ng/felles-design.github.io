@@ -1296,6 +1296,13 @@ select.form-control.haveErrors:focus {
   border: 2px solid #D22630;
   margin: 20px 0 25px 0;
 }
+.alert.alert-warning.collection {
+  display: block;
+  color: #FF5D00;
+  border: 2px solid #FF5D00;
+  margin: 20px 0 25px 0;
+  padding-left: 15px;
+}
 input[type="radio"],
 .radio input[type="radio"],
 .radio-inline input[type="radio"] {
@@ -2254,7 +2261,7 @@ ol.number-list ol.-tab > li:focus a:after {
   }
 }
 /******************************************************************************
-  helptext 
+  helptext
 ******************************************************************************/
 .helptext-btn {
   position: relative;
@@ -2362,6 +2369,7 @@ ol.number-list ol.-tab > li:focus a:after {
   -ms-transition: all 0.2s ease-in-out 0;
   transition: all 0.2s ease-in-out 0;
   font-size: 14px;
+  font-weight: normal;
   /*
 	&.-popup {
 		position: absolute;
@@ -2384,7 +2392,7 @@ ol.number-list ol.-tab > li:focus a:after {
 			a {
 				visibility: visible;
 			}
-		}			
+		}
 	}
 	*/
 }
